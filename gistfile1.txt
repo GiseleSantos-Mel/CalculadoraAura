@@ -15,8 +15,8 @@
    	<aura:attribute name="resultado" 	type="Integer" default="0" />
     
     <div style="background-color:white;">
-        Numero1: 10 <br/>
-        Numero2: 10 <br/><br/> 
+        Numero1: <lightning:input aura:id="n1" type="number" value="{!v.numero1}" /> <br/>
+        Numero2: <lightning:input aura:id="n2" type="number" value="{!v.numero2}"/>  <br/><br/> 
         
         Resultado da soma é: {!v.resultado} <br/><br/>
 		
