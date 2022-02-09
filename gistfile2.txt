@@ -1,0 +1,27 @@
+({
+	soma : function(component, event, helper) {
+    // Criei uma função chamada SOMA 
+    // Meus parametros são component, event, helper
+    
+		// Atribui o valor do Atributo numero1 para a variavel n1	
+       	var n1 =  component.get("v.numero1");
+        
+        // Mostra uma mensagem no console do navegador	
+       	console.log('valor n1:'+n1);
+       	var n2 =  component.get("v.numero2");
+       	var result = n1+n2;
+        
+        // SET > component.set("ATRIBUTO", "VALOR");
+        component.set("v.resultado", result);
+	},
+    sub : function(component, event, helper) {
+    	
+       	var n1 =  component.get("v.numero1");
+        var n2 =  component.get("v.numero2");
+       	var result = n1-n2;
+        
+        component.set("v.resultado", result);
+	}
+    
+    
+})
